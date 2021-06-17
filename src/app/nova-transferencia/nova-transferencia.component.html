@@ -6,7 +6,7 @@
       <div class="form-field">
           <label for="field" class="label--required">Valor</label>
           <section>
-              <input id="field" required type="text" placeholder="R$ 55.55" />
+              <input id="field" required type="text" placeholder="R$ 55.55" [(ngModel)]="valor" name="valor"/>
           </section>
       </div>
 
@@ -14,7 +14,7 @@
       <div class="form-field">
           <label for="phone" class="label--required">Destino</label>
           <section>
-              <input id="phone" required type="tel" placeholder="222-1" />
+              <input id="phone" required type="tel" placeholder="222-1" [(ngModel)]="destino"  name="destino"/>
           </section>
       </div>
 
