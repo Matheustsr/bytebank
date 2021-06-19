@@ -1,3 +1,4 @@
+import { formatDate } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,9 +9,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'bytebank';
 
-  transferencia: any | undefined;
+  transferencias: any[] = [];
 
   transferir($event: any){
-    this.transferencia = $event;
+    console.log($event);
+    const transferencia = {...$event, data: new Date()};
+    this.transferencias.push(transferencia);
   }
 }

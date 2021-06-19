@@ -24,6 +24,7 @@
   }
 }
 
+
 $opensans: 'Open Sans',
 sans-serif;
 $blue: #3498db;
@@ -52,14 +53,15 @@ h1 {
 }
 
 main {
-  position: center;
+
+  padding: 0;
   background-color: #fefefe;
   border: 1px solid #f2f2f2;
   border-radius: $radius;
   box-shadow: $shadow;
   min-width: 350px;
   max-width: 450px;
-  width: 10vw;
+  width: 600vw;
   padding: 2rem;
 
   .form-buttons {
