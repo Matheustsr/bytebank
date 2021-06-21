@@ -1,27 +1,16 @@
-<main>
-  <form (ngSubmit)="transferir()">
-      <h1>Nova transferencia!</h1>
-
-      <!-- VALUE FIELD -->
-      <div class="form-field">
-          <label for="field" class="label--required">Valor</label>
-          <section>
-              <input id="field" required type="number" placeholder="R$ 55.55" [(ngModel)]="valor" name="valor"/>
-          </section>
-      </div>
-
-      <!-- DESTINY FIELD -->
-      <div class="form-field">
-          <label for="phone" class="label--required">Destino</label>
-          <section>
-              <input id="phone" required type="tel" placeholder="222-1" [(ngModel)]="destino"  name="destino"/>
-          </section>
-      </div>
-
-      <!-- BUTTONS -->
-      <div class="form-buttons">
-          <button type="submit" class="a-btn--filled">Transferir!</button>
-      </div>
-
+<section class="container">
+  <form class="formulario" (ngSubmit)="transferir()">
+    <h2 class="formulario__titulo">Nova Transferência</h2>
+    <div class="form-field">
+      <label class="form-field__label" for="valor">Valor</label>
+      <input class="form-field__input" type="number" id="valor" [(ngModel)]="valor" name="valor" />
+    </div>
+    <div class="form-field">
+      <label class="form-field__label" for="destino">Destino</label>
+      <input class="form-field__input" type="text" id="destino" [(ngModel)]="destino"  name="destino"/>
+    </div>
+    <div class="botao-wrapper">
+      <button class="botao">Transferir</button>
+    </div>
   </form>
-</main>
+</section>
