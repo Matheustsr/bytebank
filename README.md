@@ -1,27 +1,62 @@
-# Bytebank
+<h1 align="center">
+    Bytebank
+</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.4.
 
-## Development server
+## About
+Bytebank - It is a basic system that simulates bank transfers.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Users will find the following features:
+- Transfer
+- View transfers
 
-## Code scaffolding
+Project designed to study and learn Angular
+</p>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Techs
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+The following tools were used in the construction of the project:
 
-## Running unit tests
+- [Angular][angular]
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## How to run:
 
-## Running end-to-end tests
+### Prerequisites
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Before starting, you will need to have the following tools installed on your machine:
+[Git](https://git-scm.com), [Node.js][nodejs].
+It's nice to have an editor to work with code like [VSCode][vscode]
 
-## Further help
+### Run (Front End)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+# Clone this repo
+$ git clone https://github.com/matheustsr/bytebank
+
+# Install dependencies
+$ npm install
+
+# Start
+$ ng s -o
+
+# It will run in port:3000 - go to http://localhost:3000
+```
+### Run json-server 
+
+```bash
+
+# Go to "banco de dados" in json
+$ cd dados
+
+# Run json-server
+$ json-server --watch db.json
+
+```
+
+[nodejs]: https://nodejs.org/
+[angular]: https://angular.io/
+[vscode]: https://code.visualstudio.com/
+[vceditconfig]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+[license]: https://opensource.org/licenses/MIT
+[vceslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
